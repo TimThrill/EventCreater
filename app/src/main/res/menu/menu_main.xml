@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rmit.csit.s3496858.eventcreater.UI.MainActivity">
+    <item
+        android:id="@+id/eventsOrder"
+        android:title="eventsOrder"
+        android:icon="@android:drawable/arrow_up_float"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/calendar_view"
+        android:title="calendar"
+        android:icon="@mipmap/ic_calendar"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/add_event"
+        android:title="Add"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        app:showAsAction="ifRoom" />
+</menu>

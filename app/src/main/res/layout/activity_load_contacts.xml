@@ -1,0 +1,51 @@
+<!-- Main activity layout file -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.cong.eventcreater.UI.LoadContactsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/my_toolbar"
+        android:id="@+id/contacts_list_view" >
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/cancel"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:id="@+id/contact_cancel"
+            android:background="@color/button"
+            android:textColor="@color/button_text"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/ok"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:id="@+id/contact_ok"
+            android:background="@color/button"
+            android:textColor="@color/button_text"/>
+    </LinearLayout>
+</RelativeLayout>
